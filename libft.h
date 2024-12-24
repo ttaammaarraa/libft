@@ -62,4 +62,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void    ft_lstadd_front(t_list **lst, t_list *new);
 t_list  *ft_lstnew(void *content);
 t_list  *ft_lstlast(t_list *lst);
+void    ft_lstdelone(t_list *lst, void (*del)(void *));
+void    ft_lstadd_back(t_list **lst, t_list *new);
 #endif

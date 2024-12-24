@@ -2,15 +2,20 @@
 //#include <stdio.h>
 void    ft_lstadd_back(t_list **lst, t_list *new)
 {
-    if (!new)
-        return ; 
     t_list *last;
-
-    last = ft_lstlast(*lst);
-    last-> next = new;
-    //new->next = NULL;
+    if (!new)
+        return ;
+    if (!*lst)
+    {
+        *lst = new;
+    }
+    else
+    {
+        last = ft_lstlast(*lst);
+        last-> next = new;
+        //new->next = NULL;
+    }
 }
-
 /*int main()
 {
     t_list *p1;
