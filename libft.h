@@ -59,5 +59,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *str, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void    ft_lstadd_front(t_list **lst, t_list *new);
 t_list  *ft_lstnew(void *content);
+t_list  *ft_lstlast(t_list *lst);
 #endif
